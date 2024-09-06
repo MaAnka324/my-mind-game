@@ -1,16 +1,17 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
+import {Icon} from './../img/Icon'
 
 export function HomeScreen({navigation}: any) {
     return (
         <View style={styles.container}>
           <LinearGradient
-            // Background Linear Gradient
             colors={['#43BCF0', '#541896', '#711280']}
             start={{ x: 1, y: 0 }}  
             end={{ x: 0, y: 1 }}
             style={styles.background}
           />
+          <Icon icon="my_mind" size={250}/>   
           <TouchableOpacity 
           style={styles.button}
           onPress={()=>navigation.navigate('StartGame')}>
