@@ -5,7 +5,7 @@ import Svg, { Circle } from 'react-native-svg';
 import { Text } from "react-native";
 type props = {
 	icon: keyof typeof icons;
-  isActive?: boolean;
+    isActive?: boolean;
 	size?: number;
 };
 
