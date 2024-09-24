@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import {HomeScreen} from './src/screens/HomeScreen'
 import {StartGameScreen} from './src/screens/StartGameScreen'
+import Game from './src/screens/Game'
 
 const Stack = createNativeStackNavigator();
 
@@ -18,6 +19,10 @@ export default function App() {
       <Stack.Screen 
       name="StartGame" 
       component={StartGameScreen}
+      options={{ headerShown: false }}/>
+      <Stack.Screen 
+      name="Game" 
+      component={Game}
       options={{ headerShown: false }}/>
     </Stack.Navigator>
   </NavigationContainer>

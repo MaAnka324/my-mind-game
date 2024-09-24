@@ -11,10 +11,10 @@ export function HomeScreen({navigation}: any) {
             end={{ x: 0, y: 1 }}
             style={styles.background}
           />
-          <Icon icon="my_mind" size={250}/>   
+          <Icon icon="my_mind" size={250}/>  
           <TouchableOpacity 
-          style={styles.button}
-          onPress={()=>navigation.navigate('StartGame')}>
+            style={styles.button}
+            onPress={()=>navigation.navigate('Game')}>
             <Text style={styles.text}>
                  START
             </Text>
@@ -43,7 +43,7 @@ export function HomeScreen({navigation}: any) {
         borderRadius: 20,
         backgroundColor: '#6EBCF7',
         width: 160,                  
-        height: 40,                
+        height: 40,  
       },
       text: {
         backgroundColor: 'transparent',
